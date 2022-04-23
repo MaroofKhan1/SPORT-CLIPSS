@@ -44,5 +44,3 @@ passport.deserializeUser(async function(userId, cb) {
   cb(null, user);
 });
 
-
-
