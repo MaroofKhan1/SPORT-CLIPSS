@@ -6,17 +6,27 @@ var logger = require('morgan');
 var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
+// let documentOne = document.querySelector('output');
 
 
+// const apikey = 'AIzaSyDnAkfLdBv_E0Ki3U8ExDQWSGT_UhS2Kac';
+// const searchTerm = 'khan';
+// const url = `https://youtube.googleapis.com/youtube/v3/search/?part=snippet&key=${apikey}&q=${searchTerm}&maxResults=5`;
+// console.log(url);
 
+// const output = document.querySelector('.output');
+// const btn = document.createElement('button');
+// btn.textContent = 'Get Data';
+// btn.style.display = 'block';
+// output.append(btn);
+// // console.log(document);
 
-
-const apikey = 'AIzaSyDnAkfLdBv_E0Ki3U8ExDQWSGT_UhS2Kac';
-const searchTerm = 'khan';
-const url = `https://youtube.googleapis.com/youtube/v3/search/?part=snippet&key=${apikey}&q=${searchTerm}&maxResults=5`;
-console.log(url);
-
-
+// btn.addEventListener('click',(e)=> {
+//   fetch(url).then(rep=>rep.json())
+//   .then((data)=>{
+//     console.log(data);
+//   })
+// })
 
 
 
@@ -28,6 +38,7 @@ require('./config/passport');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const e = require('express');
 
 var app = express();
 
