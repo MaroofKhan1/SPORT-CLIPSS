@@ -12,11 +12,15 @@ body {
 }
 
 #Clips {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
   color: white;
+  position: absolute;
+  left: 10px;
+  text-transform: uppercase;
+  font-family: Verdana;
+  font-weight: 700;
+  font-size: 30px;
+  text-shadow: 3px 5px 2px black;
+
 }
 
 img {
@@ -38,4 +42,16 @@ nav > a {
 
 nav > a:hover {
   color: gray;
+}
+
+#kobe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  position: absolute;
+  left: 210px;
 }

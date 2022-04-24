@@ -13,8 +13,12 @@
 
 <body>
     <nav>
+        <h1 id="Clips" >Clip Vibes </h1>
+        <img class="logo" src="https://i.ibb.co/JWZ6h2Z/take-2-ccexpress.png" alt="">
         <a href="/">Home</a>
+        <a href="/">Clips</a> 
         <% if (user) { %>
+            <a href="/">Add Clips</a>
             <a href="/logout">Logout</a>
             <% } else { %>
             <a href="/auth/google" class="login">LogIn&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
