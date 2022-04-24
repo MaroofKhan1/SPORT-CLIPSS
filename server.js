@@ -7,6 +7,21 @@ var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
 
+
+
+
+
+const apikey = 'AIzaSyDnAkfLdBv_E0Ki3U8ExDQWSGT_UhS2Kac';
+const searchTerm = 'khan';
+const url = `https://youtube.googleapis.com/youtube/v3/search/?part=snippet&key=${apikey}&q=${searchTerm}&maxResults=5`;
+console.log(url);
+
+
+
+
+
+
+
 require('dotenv').config();
 require('./config/database');
 require('./config/passport');
@@ -61,5 +76,17 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=ESPN=AIzaSyDnAkfLdBv_E0Ki3U8ExDQWSGT_UhS2Kac&key=AIzaSyDnAkfLdBv_E0Ki3U8ExDQWSGT_UhS2Kac')
+// .then((results)=>{
+//   return results.json()
+// }).then((data)=>{
+//   let videos = data.items
+//   for(video of videos){
+
+//   }
+// });
+
+
 
 module.exports = app;
