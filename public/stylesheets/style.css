@@ -1,20 +1,41 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  flex-direction: row, column;
-}
-
 a {
   color: #00B7FF;
 }
 
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  flex-direction: row, column;
+  margin: 0;
+  height: 100vh;
+  background-image: url('https://w.wallha.com/ws/13/sk5tVlfZ.jpg');
+  background-size: cover;
+}
+
 #Clips {
   display: flex;
-  background-color: blueviolet;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 img {
   width: 14px;
   
+}
+
+nav {
+  display: flex;
+  background-color: #ff0b2c;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+}
+nav > a {
+  color: white;
+  padding: 5px;
+}
+
+nav > a:hover {
+  color: gray;
 }
