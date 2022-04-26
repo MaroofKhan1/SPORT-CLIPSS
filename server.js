@@ -8,38 +8,13 @@ var passport = require('passport');
 var methodOverride = require('method-override');
 
 
-// let documentOne = document.querySelector('output');
-
-
-// const apikey = 'AIzaSyDnAkfLdBv_E0Ki3U8ExDQWSGT_UhS2Kac';
-// const searchTerm = 'khan';
-// const url = `https://youtube.googleapis.com/youtube/v3/search/?part=snippet&key=${apikey}&q=${searchTerm}&maxResults=5`;
-// console.log(url);
-
-// const output = document.querySelector('.output');
-// const btn = document.createElement('button');
-// btn.textContent = 'Get Data';
-// btn.style.display = 'block';
-// output.append(btn);
-// // console.log(document);
-
-// btn.addEventListener('click',(e)=> {
-//   fetch(url).then(rep=>rep.json())
-//   .then((data)=>{
-//     console.log(data);
-//   })
-// })
-
-
-
-
-
 require('dotenv').config();
 require('./config/database');
 require('./config/passport');
 
 var indexRouter = require('./routes/index');
 var clipsRouter = require('./routes/clips');
+// var submitRouter = require('/routes/submit');
 const e = require('express');
 
 var app = express();
@@ -73,6 +48,7 @@ app.use(function(req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/clips', clipsRouter);
+// app.use('/submit', submitRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
