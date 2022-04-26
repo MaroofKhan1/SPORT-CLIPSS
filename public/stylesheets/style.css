@@ -115,10 +115,9 @@ iframe {
 .funnyClips {
   display: flex;
   flex-direction: row-reverse;
-  overflow: auto;
+  overflow: scroll;
   gap: 10px;
   align-items: center;
   justify-content: space-around;
   margin: auto;
-  /* object-fit: fill;   */
 }
