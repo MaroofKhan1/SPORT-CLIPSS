@@ -139,7 +139,8 @@ flex-wrap: wrap;
 }
 
 #submitBtn:hover {
-  color: red;
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #d22010;
 } 
 
 .paste {
@@ -150,4 +151,10 @@ flex-wrap: wrap;
   margin: auto;
   text-align: center;
   border-radius: 15px;
+}
+
+.ySubmit {
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
