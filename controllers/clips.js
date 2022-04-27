@@ -30,6 +30,7 @@ function create(req, res) {
   var clipUrl = req.body.clipUrl;
   let result = clipUrl.split('/').pop().split('?').shift()
   var embeddedUrl = `https://www.youtube.com/embed/${result}`;
+  req.body.user = req.user._id;
   var newClip = new Clip({Url:embeddedUrl});
   newClip.save(() => {
     res.redirect('/clips');
