@@ -1,4 +1,3 @@
-const clip = require('../models/clip');
 const Clip = require('../models/clip');
 
 module.exports = {
