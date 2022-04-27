@@ -7,9 +7,12 @@ body {
   flex-direction: row, column;
   margin: 0;
   height: 100vh;
-  background-image: url('https://w.wallha.com/ws/13/sk5tVlfZ.jpg');
+  /* background-color: darkgray; */
+  background-image: url('https://w.wallha.com/ws/6/T0HExfnY.jpg');
   background-size: cover;
   /* background-color: black; */
+
+  /* background-image: linear-gradient(to top, #000000, #FF0021, #FFFFFF); */
 }
 
 #Clips {
@@ -45,10 +48,11 @@ nav > a:hover {
   color: gray;
 }
 
-#kobe {
+.kobe {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 #soccer {
@@ -105,12 +109,12 @@ flex-wrap: wrap;
   
 } */
 
-iframe {
+/* iframe {
   width: 400px;
   height: 300px;
   margin: 10px;
   object-fit: cover;
-}
+} */
 
 .funnyClips {
   display: flex;
