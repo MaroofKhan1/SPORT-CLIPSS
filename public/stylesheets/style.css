@@ -125,3 +125,24 @@ flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
 }
+
+#submitBtn {
+  border-radius: 15px;
+  border: 3px solid black;
+  position: relative;
+  border: 4px red;
+  display: flex;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.paste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px;
+}
