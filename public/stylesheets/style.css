@@ -138,6 +138,10 @@ flex-wrap: wrap;
   text-align: center;
 }
 
+#submitBtn:hover {
+  color: red;
+} 
+
 .paste {
   display: flex;
   justify-content: center;
