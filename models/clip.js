@@ -17,7 +17,7 @@ const clipSchema = new Schema({
     ref: 'User',
     required: true
   },
-  Url: {
+  url: {
     type: String,
     required: true
   },

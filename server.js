@@ -15,6 +15,7 @@ require('./config/passport');
 var indexRouter = require('./routes/index');
 var clipsRouter = require('./routes/clips');
 var reviewsRouter = require('./routes/reviews');
+var reelsRouter = require('./routes/reels');
 // var submitRouter = require('/routes/submit');
 const e = require('express');
 
@@ -50,6 +51,8 @@ app.use(function(req, res, next) {
 app.use('/', indexRouter);
 app.use('/clips', clipsRouter);
 app.use('/reviews', reviewsRouter);
+app.use('/reels', reelsRouter);
+
 // app.use('/submit', submitRouter);
 
 // catch 404 and forward to error handler
