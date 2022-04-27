@@ -8,18 +8,17 @@ module.exports = {
     create
 };
 
-// function index(req, res) {
-//     res.render('clips/index', {title: 'Clips'} )
-// }
-
 function index(req, res) {
   Clip.find({}, (err, clips) => {
+    clips.reverse();
     res.render('clips/index', {clips});
   });
 }
 
 function show(req, res) {
-
+  Clip.findOne({ _id: req.params.id },(err, clip) => {
+    res.render('clips/show', {clip});
+  });
 }
 
 function newClip(req, res) {
@@ -29,23 +28,14 @@ function newClip(req, res) {
 function create(req, res) {
   var clipUrl = req.body.clipUrl;
   let result = clipUrl.split('/').pop().split('?').shift()
-  var embeddedUrl = `https://www.youtube.com/embed/${result}`;
-  req.body.user = req.user._id;
-  var newClip = new Clip({Url:embeddedUrl});
-  newClip.save(() => {
+  if (result.groups) {
+    var embeddedUrl = `https://www.youtube.com/embed/${result}`;
+    req.body.user = req.user._id;
+    var newClip = new Clip({Url:embeddedUrl});
+    newClip.save(() => {
+      res.redirect('/clips');
+    });   
+  } else {
     res.redirect('/clips');
-  });   
+  }
 }
-
-
-
-  // var match = clipUrl.match(/(http:|https:)?(\/\/)?(youtube.com|youtu.be)\/?(\?v=|\/);
-  // console.log('clipUrl',clipUrl);
-  // console.log('match', match);
-  // if (match.groups) {
-    // var embeddedUrl = `https://www.youtube.com/embed/${match.groups.uid}`;
-    // var newClip = new Clip({Url:embeddedUrl});
-    // newClip.save(() => {
-    //   res.redirect('/clips');
-    // });    
-// }
