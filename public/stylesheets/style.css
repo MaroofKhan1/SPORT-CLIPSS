@@ -11,6 +11,7 @@ body {
   background-image: url('https://w.wallha.com/ws/6/T0HExfnY.jpg');
   background-size: cover;
   /* background-color: black; */
+  color: white;
 
   /* background-image: linear-gradient(to top, #000000, #FF0021, #FFFFFF); */
 }
@@ -126,16 +127,29 @@ flex-wrap: wrap;
   margin: auto;
 }
 
+.homeScroll {
+  flex-direction: row;
+  overflow: scroll;
+  justify-content: space-around;
+  margin: auto;
+  display: flex;
+  right: 50px;
+}
+
 #submitBtn {
   border-radius: 15px;
   border: 3px solid black;
-  position: relative;
   border: 4px red;
-  display: flex;
   margin: auto;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
   text-align: center;
+  padding: 20px 20px;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 #submitBtn:hover {
@@ -151,10 +165,29 @@ flex-wrap: wrap;
   margin: auto;
   text-align: center;
   border-radius: 15px;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .ySubmit {
   justify-content: center;
   display: flex;
   align-items: center;
+  color: white;
+}
+
+.xButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  width: 0;
+}
+
+.viewComments {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
 }

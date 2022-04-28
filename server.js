@@ -50,7 +50,7 @@ app.use(function(req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/clips', clipsRouter);
-app.use('/reviews', reviewsRouter);
+app.use('/', reviewsRouter);
 app.use('/reels', reelsRouter);
 
 // app.use('/submit', submitRouter);
