@@ -58,6 +58,7 @@ nav > a:hover {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-top: 20px;
 }
 
 #soccer {
@@ -134,11 +135,13 @@ flex-wrap: wrap;
 
 .homeScroll {
   flex-direction: row;
-  overflow: scroll;
-  justify-content: space-around;
+  /* overflow: scroll; */
+  /* justify-content: space-around; */
   margin: auto;
   display: flex;
   right: 50px;
+  padding-top: 30px;
+  gap: 10px;
 }
 
 #submitBtn {
@@ -286,4 +289,41 @@ flex-wrap: wrap;
 
 .login {
   font-size: 22px;
+}
+
+.ufc {
+ align-items: center;
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: center;
+ overflow-x: scroll;
+ gap: 5px;
+ margin-left: -10px;
+}
+
+.basketball{
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  overflow-x: scroll;
+  gap: 5px;
+  margin-left: -10px;
+}
+
+.football {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  overflow-x: scroll;
+  gap: 5px;
+  margin-left: -10px;
+}
+
+.clipsCont {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
 }
