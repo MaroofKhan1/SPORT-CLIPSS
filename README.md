@@ -1,12 +1,10 @@
-
-
 <link rel="images" href="images">
 <div align="center">
    <img src="https://i.ibb.co/9Nfj3Hk/Clip-Vibes-4-28-2022-2.png"/>
 </div>
 
 <div align="center">
-  <h3>Maroof Khan</h3>`                             
+  <h3>Maroof Khan</h3>                           
   <a href="https://github.com/MaroofKhan1/SPORT-CLIPSS">
     <img src="https://img.shields.io/badge/-Portfolio:_MaroofKhan1.github.io-darkgreen?style=flat&logo=medium"/>
   </a>
@@ -23,9 +21,10 @@
 <summary> :gear: Functionality</summary>
   | Description | Screenshot |
   |------------ | ------------|
-  | <h3 align="center">Landing Page</h3> | <img src="https://i.imgur.com/boJ7O1q.png"/>
-  | <h3 align="center">Library</h3> | <img src="https://i.imgur.com/bd6FnPP.jpg"/>
-  | <h3 align="center">Add Clips</h3> | <img src="https://i.imgur.com/InzXDHa.png"/>
+  | <h3 align="center">Home</h3> | <img src="https://imgur.com/undefined"/>
+  | <h3 align="center">Clips</h3> | <img src="https://imgur.com/undefined"/>
+  | <h3 align="center">HighLights</h3> | <img src="https://imgur.com/undefined"/>
+  | <h3 align="center">Submit</h3> | <img src="https://imgur.com/v2Q5qC3"/>
 </details>
 ## :computer: Technologies Used
 ![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb)
@@ -42,17 +41,22 @@
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio) 
 <h2> :atom_symbol: Getting Started </h2>
-<a href="https://trello.com/b/OlIsti1V/clippy">Trello</a>
+<a href="https://clips-vibes.herokuapp.com">Trello</a>
 <a href="https://clippy22.herokuapp.com/">Deployed Heroku App</a>
 <h3> :calling: Instructions </h3>
 <details open>
   <summary>Community Guidelines</summary>
   <ol>
   <li>ADD MORE CLIPS!</li>
+  <li>ADD YOUTUBE API!</li>
+  <li>FILTER ONLY SPORT CLIPS THROW THE API</li>
+  <li>ADD A WAY TO MAKE A PROFILE AND PEOPLE CAN UPLOAD THERE CLIPS</li>
+  <li>A BETTER WAY TO SHOWCASE YOUR SKILL SET AND WATCH PEOPLE HIGHLIGHTS!</li>
+  
   </ol>
 </details>
 ## :fast_forward: Next Steps   
 ### Upcoming Features
 - [ ] API   
 - [ ] Search functionality   
-- [ ] Larger list of topics
+- [ ] Larger list of topics 
