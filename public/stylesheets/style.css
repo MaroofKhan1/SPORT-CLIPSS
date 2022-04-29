@@ -28,6 +28,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   text-shadow: 3px 5px 2px black;
+  padding-top: 18px;
 
 }
 
@@ -41,7 +42,7 @@ nav {
   background-color: #ff0b2c;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20px 0 30px;
+  padding: 5px 20px 0 20px;
 }
 nav > a {
   color: white;
@@ -56,7 +57,7 @@ nav > a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin: auto;
 }
 
 #soccer {
@@ -75,6 +76,7 @@ nav > a:hover {
 	line-height: 150px;
 	color: #000;
 	text-align: center;
+  padding-top: 20px;
 } 
 
 .animated {
@@ -130,14 +132,14 @@ flex-wrap: wrap;
   margin: auto;
 }
 
-/* .homeScroll {
+.homeScroll {
   flex-direction: row;
   overflow: scroll;
   justify-content: space-around;
   margin: auto;
   display: flex;
   right: 50px;
-} */
+}
 
 #submitBtn {
   border-radius: 15px;
@@ -254,7 +256,7 @@ flex-wrap: wrap;
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-#menu{
+#menu { 
   position: absolute;
   width: 100px;
   margin: 10px 0 0 10px;
@@ -264,22 +266,24 @@ flex-wrap: wrap;
   transform-origin: 0% 0%;
   transform: translate(140%, 0);
   right: 10px;
+  left: -100px;
+  color: black;
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
-  padding: 10px 0;
+#menu li {
+  padding: 3px 0;
   font-size: 22px;
 }
 
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
-
+.login {
+  font-size: 22px;
+}
